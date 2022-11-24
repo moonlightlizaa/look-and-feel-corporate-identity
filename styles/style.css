@@ -1,3 +1,11 @@
+:root {
+  --vtDarkBlue: #090940;
+  --vtButton: #de563b;
+  --mainBackground: #ffffff;
+
+  --vtPrimaryFont: "rigid-square", sans-serif;
+}
+
 /* ------------- navbar ------------ */
 *,
 *::before,
@@ -7,7 +15,7 @@
 
 .navbar-frame {
   height: 100px;
-  background-color: #ffffff;
+  background-color: var(--mainBackground);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -52,9 +60,9 @@
 
 .navbar-frame .navbar ul li a {
   text-decoration: none;
-  color: #090940;
+  color: var(--vtDarkBlue);
   font-size: 20px;
-  font-family: "rigid-square";
+  font-family: var(--vtPrimaryFont);
   font-weight: bold;
   display: block;
   height: 60px;
@@ -68,7 +76,7 @@
   display: none;
   text-align: right;
   padding: 10px;
-  color: #090940;
+  color: var(--vtDarkBlue);
 }
 
 .navbar-frame .navbar ul .close span {
@@ -89,7 +97,7 @@
 }
 
 .navbar-frame .navbar .icon-bar i {
-  background-color: #090940;
+  background-color: var(--vtDarkBlue);
   height: 3px;
 }
 
@@ -111,9 +119,9 @@
 }
 
 .filter-menu {
-  font-family: "rigid-square";
+  font-family: var(--vtPrimaryFont);
   font-size: 20px;
-  color: #090940;
+  color: var(--vtDarkBlue);
   grid-area: 1 / 2 / 2 / 3;
 }
 .filter-menu-items {
@@ -138,11 +146,11 @@
 
 .filter-content {
   cursor: pointer;
-  font-family: "rigid-square";
+  font-family: var(--vtPrimaryFont);
   font-size: 18px;
-  color: #090940;
+  color: var(--vtDarkBlue);
   border: none;
-  background-color: #ffffff;
+  background-color: var(--mainBackground);
   text-decoration: none;
   text-align: left;
 }
@@ -153,10 +161,10 @@ a {
 }
 
 h1 {
-  font-family: "rigid-square";
+  font-family: var(--vtPrimaryFont);
   font-size: 26px;
   font-weight: 700;
-  color: #090940;
+  color: var(--vtDarkBlue);
 }
 
 main {
@@ -249,17 +257,17 @@ main {
   grid-area: 1 / 2 / 2 / 3;
   justify-self: center;
 
-  background-color: #de563b;
+  background-color: var(--vtButton);
   border: none;
   width: 153px;
   height: 54px;
 
-  font-family: "rigid-square";
+  font-family: var(--vtPrimaryFont);
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 29px;
-  color: #ffffff;
+  color: var(--mainBackground);
 }
 #moreContent {
   display: none;
@@ -336,18 +344,18 @@ main {
 
 .tekenmethode-toevoegen button {
   grid-area: 1 / 2 / 2 / 3;
-  background-color: #de563b;
+  background-color: var(--vtButton);
   border: none;
   width: 153px;
   height: 54px;
 
   margin: 50px;
-  font-family: "rigid-square";
+  font-family: var(--vtPrimaryFont);
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 29px;
-  color: #ffffff;
+  color: var(--mainBackground);
 }
 /* -------------- footer -------------- */
 footer {
@@ -363,7 +371,7 @@ p.copyright {
   font-size: 20px;
   line-height: 24px;
 
-  color: #ffffff;
+  color: var(--mainBackground);
 }
 
 /* ------------------------------ TABLET RESPONSIVE ---------- */
@@ -392,7 +400,7 @@ p.copyright {
     position: fixed;
     left: 100%;
     flex-direction: column;
-    background: #ffffff;
+    background: var(--mainBackground);
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -407,9 +415,9 @@ p.copyright {
     height: auto;
     line-height: 10px;
 
-    color: #090940;
+    color: var(--vtDarkBlue);
     font-size: 20px;
-    font-family: "rigid-square";
+    font-family: var(--vtPrimaryFont);
     font-weight: bold;
   }
 
@@ -570,17 +578,17 @@ p.copyright {
 
   .tekenmethode-toevoegen button {
     grid-area: 1/ 2/ 2 / 3;
-    background-color: #f96c4f;
+    background-color: var(--vtButton);
     border: none;
     width: 125px;
     height: 50px;
 
-    font-family: "rigid-square";
+    font-family: var(--vtPrimaryFont);
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 29px;
-    color: #ffffff;
+    color: var(--mainBackground);
   }
 }
 
@@ -609,7 +617,7 @@ p.copyright {
     position: fixed;
     left: 100%;
     flex-direction: column;
-    background: #ffffff;
+    background: var(--mainBackground);
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -624,9 +632,9 @@ p.copyright {
     height: auto;
     line-height: 10px;
 
-    color: #090940;
+    color: var(--vtDarkBlue);
     font-size: 20px;
-    font-family: "rigid-square";
+    font-family: var(--vtPrimaryFont);
     font-weight: bold;
   }
 
@@ -729,17 +737,17 @@ p.copyright {
 
   .laad-meer button {
     grid-area: 1/ 2/ 2 / 3;
-    background-color: #de563b;
+    background-color: var(--vtButton);
     border: none;
     width: 125px;
     height: 50px;
 
-    font-family: "rigid-square";
+    font-family: var(--vtPrimaryFont);
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 29px;
-    color: #ffffff;
+    color: var(--mainBackground);
   }
 
   .laad-meer-content {
@@ -817,17 +825,17 @@ p.copyright {
 
   .tekenmethode-toevoegen button {
     grid-area: 1/ 2/ 2 / 3;
-    background-color: #de563b;
+    background-color: var(--vtButton);
     border: none;
     width: 125px;
     height: 50px;
 
-    font-family: "rigid-square";
+    font-family: var(--vtPrimaryFont);
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 29px;
-    color: #ffffff;
+    color: var(--mainBackground);
   }
 }
 
