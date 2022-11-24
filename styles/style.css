@@ -4,6 +4,7 @@
   --mainBackground: #ffffff;
 
   --vtPrimaryFont: "rigid-square", sans-serif;
+  --vtSecondaryFont: "yrsa", serif;
 }
 
 /* ------------- navbar ------------ */
@@ -105,6 +106,40 @@
   margin-top: 35px;
 }
 
+/* --------------------- intro ------------------ */
+
+.intro {
+  display: grid;
+  grid:
+    ". c1 c1 c1 ." 1fr
+    / 260px 1fr 1fr 1fr 260px;
+}
+
+.tekenmethodes {
+  grid-area: c1;
+}
+
+h1 {
+  font-family: var(--vtPrimaryFont);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 63px;
+  line-height: 44px;
+
+  color: var(--vtDarkBlue);
+}
+
+.intro-tekst {
+  left: 59px;
+  top: 245px;
+
+  font-family: var(--vtSecondaryFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: var(--vtDarkBlue);
+}
 /* --------------------- filter ----------------- */
 
 .category {
@@ -115,7 +150,7 @@
   grid-row-gap: 0px;
 
   margin-bottom: 50px;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 .filter-menu {
@@ -160,7 +195,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h2 {
   font-family: var(--vtPrimaryFont);
   font-size: 26px;
   font-weight: 700;
@@ -376,7 +411,7 @@ p.copyright {
 
 /* ------------------------------ TABLET RESPONSIVE ---------- */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1295px) {
   h1 {
     font-size: 20px;
   }
@@ -448,6 +483,44 @@ p.copyright {
 
   .category {
     display: none;
+  }
+
+  /* --------------------- intro ------------------ */
+
+  .intro {
+    display: grid;
+    grid:
+      ". c1 c1 ." 1fr
+      / 60px 1fr 1fr 60px;
+
+    justify-content: center;
+    align-content: center;
+  }
+
+  .tekenmethodes {
+    grid-area: c1;
+  }
+
+  h1 {
+    font-family: var(--vtPrimaryFont);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 63px;
+    line-height: 44px;
+
+    color: var(--vtDarkBlue);
+  }
+
+  .intro-tekst {
+    left: 59px;
+    top: 245px;
+
+    font-family: var(--vtSecondaryFont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--vtDarkBlue);
   }
 
   /* ---------------------- content responsive -------------- */
