@@ -1,4 +1,4 @@
-/* ----------------------------------- Navbar ----------------------------------- */
+/* ------------- navbar ------------ */
 *,
 *::before,
 *::after {
@@ -97,7 +97,7 @@
   margin-top: 35px;
 }
 
-/* ----------------------------------- Category filters ----------------------------------- */
+/* --------------------- filter ----------------- */
 
 .category {
   display: grid;
@@ -146,5 +146,640 @@
   text-decoration: none;
   text-align: left;
 }
+/* ------------- content ------------ */
 
-/* ----------------------------------- Content: Tekenmethodes ----------------------------------- */
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "rigid-square";
+  font-size: 26px;
+  font-weight: 700;
+  color: #090940;
+}
+
+main {
+  justify-content: center;
+}
+
+.werkvormen {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
+.werkvormen img {
+  width: 400px;
+}
+
+.roadmap {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.context-map {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.common-ground-matrix {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.grafisch-inloggen {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.sketchnote {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.scene {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.gevoel-in-beeld {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.praatplaat {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.retrospect {
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+.mindmap {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.visuele-connecties {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.cover-maken {
+  grid-area: 4 / 4 / 5 / 5;
+}
+
+/* -------------- laad meer --------------- */
+
+.laad-meer {
+  display: grid;
+  grid-template-columns: 255px 1fr 255px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  margin-top: 100px;
+}
+.laad-meer-content img {
+  width: 400px;
+}
+
+.laad-meer button {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: center;
+
+  background-color: #de563b;
+  border: none;
+  width: 153px;
+  height: 54px;
+
+  font-family: "rigid-square";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+#moreContent {
+  display: none;
+}
+
+.laad-meer-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
+.cirkel-van-gezichtspunt {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.over-5-jaar {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.diversiteitscirkel {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.drie-gedragingen {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.mijn-gebruiksaanwijzing {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.stop-start-doorgaan {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.stroomschema {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.teken-het-woord {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+/* ------------------ tekenmethode toevoegen--------------------- */
+
+.tekenmethode-toevoegen {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+
+  text-align: center;
+}
+
+.tekenmethode-informatie {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+}
+
+.tekenmethode-image {
+  grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  justify-content: flex-start;
+}
+.tekenmethode-image img {
+  width: 150px;
+}
+
+.tekenmethode-toevoegen button {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: #de563b;
+  border: none;
+  width: 153px;
+  height: 54px;
+
+  margin: 50px;
+  font-family: "rigid-square";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+/* -------------- footer -------------- */
+footer {
+  background: #625c51;
+  height: 125px;
+  width: 100%;
+}
+
+p.copyright {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+/* ------------------------------ TABLET RESPONSIVE ---------- */
+
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  /* ----------------------- Navbar Responsive ------------------ */
+  .navbar-frame {
+    justify-content: space-between;
+    margin: 25px 0px 50px 20px;
+  }
+
+  .navbar-frame .logo {
+    flex: 1;
+  }
+
+  .navbar-frame .navbar {
+    flex: 0;
+  }
+
+  .navbar-frame .navbar ul {
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+
+  .navbar-frame .navbar ul li a {
+    padding: 10px;
+    margin-left: 50px;
+    height: auto;
+    line-height: 10px;
+
+    color: #090940;
+    font-size: 20px;
+    font-family: "rigid-square";
+    font-weight: bold;
+  }
+
+  .navbar-frame .navbar ul .close {
+    display: block;
+  }
+
+  .navbar-frame .navbar .icon-bar {
+    display: flex;
+  }
+
+  .navbar-frame .navbar ._Menus-show {
+    left: 0;
+  }
+
+  .navbar-frame .navbar .account-icon {
+    padding: 10px;
+    margin-left: 50px;
+    height: auto;
+    line-height: normal;
+  }
+
+  .filter {
+    text-align: center;
+    margin: 100px;
+    display: none;
+  }
+
+  /* ---------------------- content responsive -------------- */
+  .werkvormen {
+    display: grid;
+    grid-template-columns: 200px repeat(2, 1fr) 200px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+    margin: 25px;
+  }
+
+  .werkvormen img {
+    width: 300px;
+  }
+
+  .roadmap {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .context-map {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .common-ground-matrix {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .grafisch-inloggen {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .sketchnote {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .scene {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+  .gevoel-in-beeld {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+  .praatplaat {
+    grid-area: 4 / 3 / 5 / 4;
+  }
+  .retrospect {
+    grid-area: 5 / 2 / 6 / 3;
+  }
+  .mindmap {
+    grid-area: 5 / 3 / 6 / 4;
+  }
+  .visuele-connecties {
+    grid-area: 6 / 2 / 7 / 3;
+  }
+  .cover-maken {
+    grid-area: 6 / 3 / 7 / 4;
+  }
+
+  /* ------- laad meer ----- */
+  .laad-meer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+    margin-left: 20px;
+  }
+
+  .laad-meer-content img {
+    width: 300px;
+  }
+
+  .cirkel-van-gezichtspunt {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .over-5-jaar {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .diversiteitscirkel {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .drie-gedragingen {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .mijn-gebruiksaanwijzing {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .stop-start-doorgaan {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+  .stroomschema {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+  .teken-het-woord {
+    grid-area: 4 / 3 / 5 / 4;
+  }
+  /* --------------- tekenmethodes toevoegen ----------------------- */
+
+  .tekenmethode-toevoegen {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    text-align: center;
+  }
+
+  .tekenmethode-informatie {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .tekenmethode-image img {
+    display: none;
+  }
+
+  .tekenmethode-toevoegen button {
+    grid-area: 1/ 2/ 2 / 3;
+    background-color: #f96c4f;
+    border: none;
+    width: 125px;
+    height: 50px;
+
+    font-family: "rigid-square";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+}
+
+/* PHONE RESPONSIVE */
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  /* ----------------------- Navbar Responsive ------------------ */
+  .navbar-frame {
+    justify-content: space-between;
+    margin: 25px 0px 50px 20px;
+  }
+
+  .navbar-frame .logo {
+    flex: 1;
+  }
+
+  .navbar-frame .navbar {
+    flex: 0;
+  }
+
+  .navbar-frame .navbar ul {
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+
+  .navbar-frame .navbar ul li a {
+    padding: 10px;
+    margin-left: 50px;
+    height: auto;
+    line-height: 10px;
+
+    color: #090940;
+    font-size: 20px;
+    font-family: "rigid-square";
+    font-weight: bold;
+  }
+
+  .navbar-frame .navbar ul .close {
+    display: block;
+  }
+
+  .navbar-frame .navbar .icon-bar {
+    display: flex;
+  }
+
+  .navbar-frame .navbar ._Menus-show {
+    left: 0;
+  }
+
+  .navbar-frame .navbar .account-icon {
+    padding: 10px;
+    margin-left: 50px;
+    height: auto;
+    line-height: normal;
+  }
+
+  .filter {
+    text-align: center;
+    margin: 100px;
+    display: none;
+  }
+  /* ---------------------- content responsive -------------- */
+  .werkvormen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .werkvormen img {
+    width: 300px;
+  }
+
+  .roadmap {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .context-map {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .common-ground-matrix {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .grafisch-inloggen {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+  .sketchnote {
+    grid-area: 5 / 2 / 6 / 3;
+  }
+  .scene {
+    grid-area: 6 / 2 / 7 / 3;
+  }
+  .gevoel-in-beeld {
+    grid-area: 7 / 2 / 8 / 3;
+  }
+  .praatplaat {
+    grid-area: 8 / 2 / 9 / 3;
+  }
+  .retrospect {
+    grid-area: 9 / 2 / 10 / 3;
+  }
+  .mindmap {
+    grid-area: 10 / 2 / 11 / 3;
+  }
+  .visuele-connecties {
+    grid-area: 11 / 2 / 12 / 3;
+  }
+  .cover-maken {
+    grid-area: 12 / 2 / 13 / 3;
+  }
+
+  /* ------- laad meer ----- */
+
+  .laad-meer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .laad-meer button {
+    grid-area: 1/ 2/ 2 / 3;
+    background-color: #de563b;
+    border: none;
+    width: 125px;
+    height: 50px;
+
+    font-family: "rigid-square";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+
+  .laad-meer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .laad-meer-content img {
+    width: 300px;
+  }
+  #moreContent {
+    display: none;
+  }
+
+  .cirkel-van-gezichtspunt {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .over-5-jaar {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .diversiteitscirkel {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .drie-gedragingen {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+  .mijn-gebruiksaanwijzing {
+    grid-area: 5 / 2 / 6 / 3;
+  }
+  .stop-start-doorgaan {
+    grid-area: 6 / 2 / 7 / 3;
+  }
+
+  .stroomschema {
+    grid-area: 7 / 2 / 8 / 3;
+  }
+  .teken-het-woord {
+    grid-area: 8 / 2 / 9 / 3;
+  }
+
+  /* --------------- tekenmethodes toevoegen ----------------------- */
+
+  .tekenmethode-toevoegen {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    text-align: center;
+  }
+
+  .tekenmethode-informatie {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .tekenmethode-image img {
+    display: none;
+  }
+
+  .tekenmethode-toevoegen button {
+    grid-area: 1/ 2/ 2 / 3;
+    background-color: #de563b;
+    border: none;
+    width: 125px;
+    height: 50px;
+
+    font-family: "rigid-square";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+}
+
+.body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
