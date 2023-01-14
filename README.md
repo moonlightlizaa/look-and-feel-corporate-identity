@@ -22,13 +22,7 @@ Ik heb gewerkt met de User Story:
 Het is hier de bedoeling dat je alle werkvormen makkelijk op een pagina kan vinden en uitkiezen. Dit is dus een overzicht van alle soorten werkvormen die er bestaan voor visual thinking. 
 
 Later is het ook nog mogelijk zijn om ze te op categorie te filteren en ook zelf een tekenmethode toe te voegen.  
-
-<img width="1792" alt="Screenshot 2022-10-13 at 8 59 31 PM" src="https://user-images.githubusercontent.com/106411511/195684088-20b652cb-9a88-46ba-8602-25ae28b3ad23.png">
-
-<img width="1790" alt="Screenshot 2022-10-13 at 8 59 07 PM" src="https://user-images.githubusercontent.com/106411511/195683950-ab4206e4-d751-4297-b188-8aa4bce732fc.png">
-
-<img width="1792" alt="Screenshot 2022-10-13 at 9 02 13 PM" src="https://user-images.githubusercontent.com/106411511/195685079-564ce2dc-c568-4b54-9fae-fad200aef607.png">
-
+<img width="1788" alt="Screenshot 2023-01-14 at 9 11 32 PM" src="https://user-images.githubusercontent.com/106411511/212494437-4e68acd5-4653-4d25-9f9f-2cb06c771ad8.png">
 
 ## Kenmerken
 Voor dit project ben ik verder gegaan met mijn website voor Visual Thinking. Ik heb de feedback van de opdrachtgever toegepast en ook de website getest en aangepast op toegankelijkheid. 
