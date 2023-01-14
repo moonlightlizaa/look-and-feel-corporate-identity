@@ -4,6 +4,7 @@
   --mainBackground: #ffffff;
 
   --vtPrimaryFont: "rigid-square", sans-serif;
+  --vtSecondaryFont: "yrsa", serif;
 }
 
 /* ------------- navbar ------------ */
@@ -103,6 +104,41 @@
 
 .navbar-frame .navbar .account-icon {
   margin-top: 35px;
+}
+
+/* --------------------- intro ------------------ */
+
+.intro {
+  display: grid;
+  grid:
+    ". c1 c1 c1 ." 1fr
+    / 260px 1fr 1fr 1fr 260px;
+
+  height: 400px;
+}
+
+.tekenmethodes {
+  grid-area: c1;
+}
+
+.intro .tekenmethodes h1 {
+  font-family: var(--vtPrimaryFont);
+
+  font-weight: 800;
+  font-size: 63px;
+  line-height: 20px;
+
+  color: var(--vtDarkBlue);
+}
+
+.intro-tekst {
+  width: 600px;
+  font-family: var(--vtSecondaryFont);
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: var(--vtDarkBlue);
 }
 
 /* --------------------- filter ----------------- */
